@@ -1,0 +1,42 @@
+.parent {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 10% 40% 50%;
+    gap: 6px;
+}
+img {
+    width: 100%;
+}
+.s1 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    border-style: solid;
+    border-radius: 3px;
+    padding: 5px;
+    text-align: center;
+}
+.s2 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border-style: solid;
+    border-radius: 3px;
+    padding: 3px;
+    margin: 5px;
+    text-align: center;
+}
+.s3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.s4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.s5 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.s6 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}

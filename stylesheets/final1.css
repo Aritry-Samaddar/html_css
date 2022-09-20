@@ -1,0 +1,101 @@
+.parent {
+    background-color: floralwhite;
+}
+.c1 {
+    background-image: url(../samplePictures/Desert.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 1%;
+    border: 2px solid black;
+    /* opacity: 0.75; */
+    /* position: sticky; */
+    /* top: -0px; */
+}
+.c1 h2 {
+    position: absolute;
+    border: solid;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+    background-color: darksalmon;
+}
+.c2 {
+    position: sticky;
+    top: -0px;
+}
+.c2 h1 {
+    border: solid;
+    padding: 5px;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+    background-color: rgb(183, 105, 105);
+}
+.c3 h1 {
+    margin: 20px 40px;
+    padding: 10px 0px;
+    color: rgb(95, 62, 29);
+    border-bottom: 8px solid saddlebrown;
+    width: 65%;
+}
+.c3 p {
+    padding: 10px;
+    border: solid;
+    border-radius: 3px;
+    border-color: plum;
+}
+.c4 h1 {
+    margin: 20px 40px;
+    padding: 10px 0px;
+    color: rgb(95, 62, 29);
+    border-bottom: 8px solid saddlebrown;
+    width: 65%;
+}
+img {
+    width: 100%;
+}
+.c-h {
+    /* margin: 3px; */
+    width: 20%;
+}
+.c41 {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    justify-content: space-evenly;
+}
+.r1 {
+    /* width: 25%; */
+}
+.r2 {
+    /* width: 25%; */
+}
+.r3 {
+    /* width: 25%; */
+}
+.r4 {
+    /* width: 25%; */
+}
+.c5 h2 {
+    margin: 20px 40px;
+    padding: 10px 0px;
+    color: rgb(7, 52, 52);
+    border-bottom: 8px solid rgb(120, 120, 1);
+    width: 25%;
+}
+.d {
+    padding: 50px;
+    border: solid;
+    border-radius: 3px;
+    border-color: plum;
+    align-items: center;
+}
+.c5 p {
+    padding: 10px;
+    border: solid;
+    border-radius: 3px;
+    border-color: plum;
+}

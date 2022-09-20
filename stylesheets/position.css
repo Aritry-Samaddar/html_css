@@ -1,0 +1,43 @@
+/* .parent {
+    background-image: url(../samplePictures/Desert.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.75;
+    position: sticky;
+    top: -200px;
+}
+.c1 {
+    position: absolute;
+    border: solid;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.c2 {
+    position: absolute;
+}
+.c3 {
+    
+} */
+.c1 {
+    background-image: url(../samplePictures/Desert.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* opacity: 0.75; */
+    position: sticky;
+    top: -0px;
+}
+.c1 h1 {
+    position: absolute;
+    border: solid;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.c2 {
+
+}
