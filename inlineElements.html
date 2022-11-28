@@ -1,14 +1,467 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Inline Elements -->
 
-    
-</body>
+    <!-- Defines a hyperlink.
+    The <a> tag defines a hyperlink, which is used to link from one page to another.
+
+    The most important attribute of the <a> element is the href attribute, which indicates the link's destination.
+
+    By default, links will appear as follows in all browsers:
+
+    An unvisited link is underlined and blue
+    A visited link is underlined and purple
+    An active link is underlined and red
+
+    Tip: If the <a> tag has no href attribute, it is only a placeholder for a hyperlink.
+
+    Tip: A linked page is normally displayed in the current browser window, unless you specify another target.
+
+    Tip: Use CSS to style links: CSS Links and CSS Buttons. -->
+    <a href="https://www.w3schools.com">Visit W3Schools.com!</a>
+    <!-- Defines an abbreviation or an acronym.
+The <abbr> tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+
+Tip: Use the global title attribute to show the description for the abbreviation/acronym when you mouse over the element. -->
+    The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+    <!-- Defines bold text.
+The <b> tag specifies bold text without any extra importance.
+Note: According to the HTML5 specification, the <b> tag should be used as a LAST resort when no other tag is more appropriate. The specification states that headings should be denoted with the <h1> to <h6> tags, emphasized text should be denoted with the <em> tag, important text should be denoted with the <strong> tag, and marked/highlighted text should be denoted with the <mark> tag.
+
+Tip: You can also use the following CSS to set bold text: "font-weight: bold;". -->
+    <p>This is normal text - <b>and this is bold text</b>.</p>
+    <!-- Overrides the current text direction.
+BDO stands for Bi-Directional Override.
+
+The <bdo> tag is used to override the current text direction.
+ -->
+    <bdo dir="rtl"> This text will go right-to-left. </bdo>
+    <!-- big & small -->
+    <br />
+    <big>hello</big><small>world!</small>
+    <!-- Defines a single line break.
+The <br> tag inserts a single line break.
+
+The <br> tag is useful for writing addresses or poems.
+
+The <br> tag is an empty tag which means that it has no end tag.
+
+Note: Use the <br> tag to enter line breaks, not to add space between paragraphs. -->
+    <p>
+      To force<br />
+      line breaks<br />
+      in a text,<br />
+      use the br<br />
+      element.
+    </p>
+    <!-- Defines a clickable button.
+The <button> tag defines a clickable button.
+
+Inside a <button> element you can put text (and tags like <i>, <b>, <strong>, <br>, <img>, etc.). That is not possible with a button created with the <input> element!
+
+Tip: Always specify the type attribute for a <button> element, to tell browsers what type of button it is.
+
+Tip: You can easily style buttons with CSS! Look at the examples below or visit our CSS Buttons tutorial. -->
+    <button type="button">Click Me!</button>
+    <!-- Defines the title of a work.
+The <cite> tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).
+
+Note: A person's name is not the title of a work.
+
+The text in the <cite> element usually renders in italic. -->
+    <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+    <!-- Defines a piece of computer code.
+The <code> tag is used to define a piece of computer code. The content inside is displayed in the browser's default monospace font.
+
+Tip: This tag is not deprecated. However, it is possible to achieve richer effect by using CSS (see example below).
+
+Also look at:
+Tag 	Description
+<samp> 	Defines sample output from a computer program
+<kbd> 	Defines keyboard input
+<var> 	Defines a variable
+<pre> 	Defines preformatted text -->
+    <p>The HTML <code>button</code> tag defines a clickable button.</p>
+
+    <p>
+      The CSS <code>background-color</code> property defines the background
+      color of an element.
+    </p>
+    <!-- Specifies a term that is going to be defined within the content.
+The <dfn> tag stands for the "definition element", and it specifies a term that is going to be defined within the content.
+
+The nearest parent of the <dfn> tag must also contain the definition/explanation for the term.
+
+The term inside the <dfn> tag can be any of the following: -->
+    <p>
+      <dfn>HTML</dfn> is the standard markup language for creating web pages.
+    </p>
+
+    <p>
+      <dfn title="HyperText Markup Language">HTML</dfn> is the standard markup
+      language for creating web pages.
+    </p>
+
+    <p>
+      <dfn><abbr title="HyperText Markup Language">HTML</abbr></dfn> is the
+      standard markup language for creating web pages.
+    </p>
+
+    <p>
+      <dfn id="html-def">HTML</dfn> is the standard markup language for creating
+      web pages.
+    </p>
+    <p>This is some text...</p>
+    <p>This is some text...</p>
+    <p>Learn <a href="#html-def">HTML</a> now.</p>
+    <!-- Defines emphasized text.
+The <em> tag is used to define emphasized text. The content inside is typically displayed in italic.
+
+A screen reader will pronounce the words in <em> with an emphasis, using verbal stress. -->
+    <p>You <em>have</em> to hurry up!</p>
+
+    <p>We <em>cannot</em> live like this.</p>
+    <!-- Defines a part of text in an alternate voice or mood.
+The <i> tag defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.
+
+The <i> tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.
+
+Use the <i> element only when there is not a more appropriate semantic element, such as:
+
+    <em> (emphasized text)
+    <strong> (important text)
+    <mark> (marked/highlighted text)
+    <cite> (the title of a work)
+    <dfn> (a definition term)
+ -->
+    <p><i>Lorem ipsum</i> is the most popular filler text in history.</p>
+
+    <p>
+      The <i>RMS Titanic</i>, a luxury steamship, sank on April 15, 1912 after
+      striking an iceberg.
+    </p>
+    <!-- Defines an image.
+The <img> tag is used to embed an image in an HTML page.
+
+Images are not technically inserted into a web page; images are linked to web pages. The <img> tag creates a holding space for the referenced image.
+
+The <img> tag has two required attributes:
+
+    src - Specifies the path to the image
+    alt - Specifies an alternate text for the image, if the image for some reason cannot be displayed
+
+Note: Also, always specify the width and height of an image. If width and height are not specified, the page might flicker while the image loads.
+
+Tip: To link an image to another document, simply nest the <img> tag inside an <a> tag (see example below). -->
+    <img
+      src="./samplePictures/Lighthouse.jpg"
+      alt="Girl in a jacket"
+      width="500"
+      height="600"
+    />
+    <!-- Defines an input control.
+The <input> tag specifies an input field where the user can enter data.
+
+The <input> element is the most important form element.
+
+The <input> element can be displayed in several ways, depending on the type attribute.
+
+The different input types are as follows:
+
+    <input type="button">
+    <input type="checkbox">
+    <input type="color">
+    <input type="date">
+    <input type="datetime-local">
+    <input type="email">
+    <input type="file">
+    <input type="hidden">
+    <input type="image">
+    <input type="month">
+    <input type="number">
+    <input type="password">
+    <input type="radio">
+    <input type="range">
+    <input type="reset">
+    <input type="search">
+    <input type="submit">
+    <input type="tel">
+    <input type="text"> (default value)
+    <input type="time">
+    <input type="url">
+    <input type="week">
+
+Look at the type attribute to see examples for each input type!
+
+Tip: Always use the <label> tag to define labels for <input type="text">, <input type="checkbox">, <input type="radio">, <input type="file">, and <input type="password">. -->
+    <form action="/action_page.php">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <!-- Defines keyboard input.
+The <kbd> tag is used to define keyboard input. The content inside is displayed in the browser's default monospace font.
+
+Tip: This tag is not deprecated. However, it is possible to achieve richer effect by using CSS (see example below).
+
+Also look at:
+Tag 	Description
+<code> 	Defines a piece of computer code
+<samp> 	Defines sample output from a computer program
+<var> 	Defines a variable
+<pre> 	Defines preformatted text -->
+    <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
+
+    <p>Press <kbd>Cmd</kbd> + <kbd>C</kbd> to copy text (Mac OS).</p>
+    <!-- Defines a label for an <input> element.
+The <label> tag defines a label for several elements:
+
+    <input type="checkbox">
+    <input type="color">
+    <input type="date">
+    <input type="datetime-local">
+    <input type="email">
+    <input type="file">
+    <input type="month">
+    <input type="number">
+    <input type="password">
+    <input type="radio">
+    <input type="range">
+    <input type="search">
+    <input type="tel">
+    <input type="text">
+    <input type="time">
+    <input type="url">
+    <input type="week">
+    <meter>
+    <progress>
+    <select>
+    <textarea>
+
+Proper use of labels with the elements above will benefit:
+
+Screen reader users (will read out loud the label, when the user is focused on the element)
+Users who have difficulty clicking on very small regions (such as checkboxes) - because when a user clicks the text within the <label> element, it toggles the input (this increases the hit area).
+
+Tip: The for attribute of <label> must be equal to the id attribute of the related element to bind them together. A label can also be bound to an element by placing the element inside the <label> element. -->
+    <form action="/action_page.php">
+      <input type="radio" id="html" name="fav_language" value="HTML" />
+      <label for="html">HTML</label><br />
+      <input type="radio" id="css" name="fav_language" value="CSS" />
+      <label for="css">CSS</label><br />
+      <input
+        type="radio"
+        id="javascript"
+        name="fav_language"
+        value="JavaScript"
+      />
+      <label for="javascript">JavaScript</label><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <!-- Defines an image map.
+The <map> tag is used to define an image map. An image map is an image with clickable areas.
+
+The required name attribute of the <map> element is associated with the <img>'s usemap attribute and creates a relationship between the image and the map.
+
+The <map> element contains a number of <area> elements, that defines the clickable areas in the image map. -->
+    <img
+      src="./samplePictures/workplace.jpg"
+      alt="Workplace"
+      usemap="#workmap"
+      width="400"
+      height="379"
+    />
+
+    <map name="workmap">
+      <area
+        shape="rect"
+        coords="34,44,270,350"
+        alt="Computer"
+        href="computer.htm"
+      />
+      <area
+        shape="rect"
+        coords="290,172,333,250"
+        alt="Phone"
+        href="phone.htm"
+      />
+      <area
+        shape="circle"
+        coords="337,300,44"
+        alt="Cup of coffee"
+        href="coffee.htm"
+      />
+    </map>
+    <!-- Defines a container for an external application.
+The <object> tag defines a container for an external resource.
+
+The external resource can be a web page, a picture, a media player, or a plug-in application.
+
+To embed a picture, it is better to use the <img> tag.
+
+To embed HTML, it is better to use the <iframe> tag.
+
+To embed video or audio, it is better to use the <video> and <audio> tags.
+ -->
+    <object
+      data="./samplePictures/Desert.jpg"
+      width="300"
+      height="200"
+    ></object>
+    <object
+      data="http://127.0.0.1:5500/inlineElements.html"
+      width="500"
+      height="200"
+    ></object>
+    <object data="video.mp4" width="400" height="300"></object>
+    <!-- Defines the result of a calculation.
+The <output> tag is used to represent the result of a calculation (like one performed by a script). -->
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+      <input type="range" id="a" value="50" />
+      +<input type="number" id="b" value="25" /> =<output
+        name="x"
+        for="a b"
+      ></output>
+    </form>
+    <!-- Defines a short quotation.
+The <q> tag defines a short quotation.
+
+Browsers normally insert quotation marks around the quotation.
+
+Tip: Use <blockquote> for long quotations. -->
+    <p>
+      WWF's goal is to:
+      <q>Build a future where people live in harmony with nature.</q>
+      We hope they succeed.
+    </p>
+    <!-- Defines sample output from a computer program.
+The <samp> tag is used to define sample output from a computer program. The content inside is displayed in the browser's default monospace font.
+
+Tip: This tag is not deprecated. However, it is possible to achieve richer effect by using CSS.
+
+Also look at:
+Tag 	Description
+<code> 	Defines a piece of computer code
+<kbd> 	Defines keyboard input
+<var> 	Defines a variable
+<pre> 	Defines preformatted text -->
+    <p>Message from my computer:</p>
+
+    <p>
+      <samp>File not found.<br />Press F1 to continue</samp>
+    </p>
+    <!-- Defines a client-side script.
+The <script> tag is used to embed a client-side script (JavaScript).
+
+The <script> element either contains scripting statements, or it points to an external script file through the src attribute.
+
+Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.
+
+Tip: Also look at the <noscript> element for users that have disabled scripts in their browser, or have a browser that doesn't support client-side scripting.
+
+Tip: If you want to learn more about JavaScript, visit our JavaScript Tutorial. -->
+    <h1>The script element</h1>
+
+    <p id="demo"></p>
+
+    <script>
+      document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    </script>
+    <!-- Defines a drop-down list.
+    The <select> element is used to create a drop-down list.
+
+The <select> element is most often used in a form, to collect user input.
+
+The name attribute is needed to reference the form data after the form is submitted (if you omit the name attribute, no data from the drop-down list will be submitted).
+
+The id attribute is needed to associate the drop-down list with a label.
+
+The <option> tags inside the <select> element define the available options in the drop-down list.
+
+Tip: Always add the <label> tag for best accessibility practices! -->
+    <label for="cars">Choose a car:</label>
+
+    <select name="cars" id="cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </select>
+    <!-- Defines a section in a document.
+The <span> tag is an inline container used to mark up a part of a text, or a part of a document.
+
+The <span> tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute.
+
+The <span> tag is much like the <div> element, but <div> is a block-level element and <span> is an inline element. -->
+    <p>My mother has <span style="color: blue">blue</span> eyes.</p>
+    <!-- Defines important text.
+The <strong> tag is used to define text with strong importance. The content inside is typically displayed in bold.
+
+Tip: Use the <b> tag to specify bold text without any extra importance! -->
+    <strong>This text is important!</strong>
+    <!-- Defines subscripted text.
+The <sub> tag defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O.
+
+Tip: Use the <sup> tag to define superscripted text. -->
+    <p>This text contains <sub>subscript</sub> text.</p>
+    <!-- Defines superscripted text.
+The <sup> tag defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW[1].
+
+Tip: Use the <sub> tag to define subscript text. -->
+    <p>This text contains <sup>superscript</sup> text.</p>
+    <!-- Defines a multiline input control (text area).
+The <textarea> tag defines a multi-line text input control.
+
+The <textarea> element is often used in a form, to collect user inputs like comments or reviews.
+
+A text area can hold an unlimited number of characters, and the text renders in a fixed-width font (usually Courier).
+
+The size of a text area is specified by the cols and rows attributes (or with CSS).
+
+The name attribute is needed to reference the form data after the form is submitted (if you omit the name attribute, no data from the text area will be submitted).
+
+The id attribute is needed to associate the text area with a label. 
+
+Tip: Always add the <label> tag for best accessibility practices! -->
+    <label for="w3review">Review of W3Schools:</label>
+
+    <textarea id="w3review" name="w3review" rows="4" cols="50">
+    At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+    </textarea>
+    <!-- Defines a specific time (or datetime).
+The <time> tag defines a specific time (or datetime).
+
+The datetime attribute of this element is used translate the time into a machine-readable format so that browsers can offer to add date reminders through the user's calendar, and search engines can produce smarter search results. -->
+    <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+
+    <p>
+      I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.
+    </p>
+    <!-- tt - defines teletype text -->
+    <tt>hello world!</tt>
+    <!-- Defines a variable.
+The <var> tag is used to defines a variable in programming or in a mathematical expression. The content inside is typically displayed in italic.
+
+Tip: This tag is not deprecated. However, it is possible to achieve richer effect by using CSS.
+
+Also look at:
+Tag 	Description
+<code> 	Defines a piece of computer code
+<samp> 	Defines sample output from a computer program
+<kbd> 	Defines keyboard input
+<pre> 	Defines preformatted text -->
+    <p>
+      The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where
+      <var>b</var> is the base, and <var>h</var> is the vertical height.
+    </p>
+  </body>
 </html>
