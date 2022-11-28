@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All HTML Tags</title>
+    <style>
+      .myDiv {
+        border: 5px outset red;
+        background-color: lightblue;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Block Elements -->
+
+    <!-- Defines contact information for the author/owner of a document.
+The <address> tag defines the contact information for the author/owner of a document or an article. The contact information can be an email address, URL, physical address, phone number, social media handle, etc. The text in the <address> element usually renders in italic, and browsers will always add a line break before and after the <address> element.-->
+    <address>
+      Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br />
+      Visit us at:<br />
+      Example.com<br />
+      Box 564, Disneyland<br />
+      USA
+    </address>
+    <!-- Defines an article.
+The <article> tag specifies independent, self-contained content. An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.
+Potential sources for the <article> element:
+Forum post
+Blog post
+News story
+Note: The <article> element does not render as anything special in a browser. However, you can use CSS to style the <article> element (see example below). -->
+    <article>
+      <h2>Google Chrome</h2>
+      <p>
+        Google Chrome is a web browser developed by Google, released in 2008.
+        Chrome is the world's most popular web browser today!
+      </p>
+    </article>
+    <!-- Defines content aside from the page content.
+The <aside> tag defines some content aside from the content it is placed in.
+The aside content should be indirectly related to the surrounding content.
+Tip: The <aside> content is often placed as a sidebar in a document.
+Note: The <aside> element does not render as anything special in a browser. However, you can use CSS to style the <aside> element (see example below). -->
+    <p>
+      My family and I visited The Epcot center this summer. The weather was
+      nice, and Epcot was amazing! I had a great summer together with my family!
+    </p>
+
+    <aside>
+      <h4>Epcot Center</h4>
+      <p>
+        Epcot is a theme park at Walt Disney World Resort featuring exciting
+        attractions, international pavilions, award-winning fireworks and
+        seasonal special events.
+      </p>
+    </aside>
+    <!-- Defines a section that is quoted from another source.
+The <blockquote> tag specifies a section that is quoted from another source.
+Browsers usually indent <blockquote> elements (look at example below to see how to remove the indentation). -->
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+      For 50 years, WWF has been protecting the future of nature. The world's
+      leading conservation organization, WWF works in 100 countries and is
+      supported by 1.2 million members in the United States and close to 5
+      million globally.
+    </blockquote>
+    <!-- Used to draw graphics, on the fly, via scripting (usually JavaScript).
+The <canvas> tag is used to draw graphics, on the fly, via scripting (usually JavaScript).
+The <canvas> tag is transparent, and is only a container for graphics, you must use a script to actually draw the graphics.
+Any text inside the <canvas> element will be displayed in browsers with JavaScript disabled and in browsers that do not support <canvas>. -->
+    <canvas id="myCanvas">
+      Your browser does not support the canvas tag.
+    </canvas>
+
+    <script>
+      var canvas = document.getElementById("myCanvas");
+      var ctx = canvas.getContext("2d");
+      ctx.fillStyle = "#FF0000";
+      ctx.fillRect(0, 0, 80, 80);
+    </script>
+    <!-- Defines a description/value of a term in a description list.
+The <dd> tag is used to describe a term/name in a description list.
+The <dd> tag is used in conjunction with <dl> (defines a description list) and <dt> (defines terms/names).
+Inside a <dd> tag you can put paragraphs, line breaks, images, links, lists, etc. -->
+    <dl>
+      <dt>Coffee</dt>
+      <dd>Black hot drink</dd>
+      <dt>Milk</dt>
+      <dd>White cold drink</dd>
+    </dl>
+    <!-- Defines a section in a document.
+The <div> tag defines a division or a section in an HTML document.
+The <div> tag is used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript.
+The <div> tag is easily styled by using the class or id attribute.
+Any sort of content can be put inside the <div> tag!
+Note: By default, browsers always place a line break before and after the <div> element. -->
+    <div class="myDiv">
+      <h2>This is a heading in a div element</h2>
+      <p>This is some text in a div element.</p>
+    </div>
+    <!-- Defines a description list.
+The <dl> tag defines a description list.
+The <dl> tag is used in conjunction with <dt> (defines terms/names) and <dd> (describes each term/name). -->
+    <dl>
+      <dt>Coffee</dt>
+      <dd>Black hot drink</dd>
+      <dt>Milk</dt>
+      <dd>White cold drink</dd>
+    </dl>
+    <!-- Defines a term/name in a description list.
+The <dt> tag defines a term/name in a description list.
+The <dt> tag is used in conjunction with <dl> (defines a description list) and <dd> (describes each term/name). -->
+    <dl>
+      <dt>Coffee</dt>
+      <dd>Black hot drink</dd>
+      <dt>Milk</dt>
+      <dd>White cold drink</dd>
+    </dl>
+    <!-- Groups related elements in a form.
+The <fieldset> tag is used to group related elements in a form.
+The <fieldset> tag draws a box around the related elements. -->
+    <form action="/action_page.php">
+      <fieldset>
+        <legend>Personalia:</legend>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" /><br /><br />
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" /><br /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" /><br /><br />
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" /><br /><br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <!-- Defines a caption for a <figure> element.
+The <figcaption> tag defines a caption for a <figure> element.
+The <figcaption> element can be placed as the first or last child of the <figure> element. -->
+    <figure>
+      <img
+        src="./samplePictures/Kerala.jpg"
+        alt="Trulli"
+        style="width: 100%; height: 400px"
+      />
+      <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+    </figure>
+    <!-- Specifies self-contained content.
+The <figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+While the content of the <figure> element is related to the main flow, its position is independent of the main flow, and if removed it should not affect the flow of the document.
+Tip: The <figcaption> element is used to add a caption for the <figure> element. -->
+    <figure>
+      <img
+        src="./samplePictures/Kerala.jpg"
+        alt="Trulli"
+        style="width: 100%; height: 400px"
+      />
+      <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+    </figure>
+    <!-- Defines a footer for a document or section.
+The <footer> tag defines a footer for a document or section.
+A <footer> element typically contains:
+    authorship information
+    copyright information
+    contact information
+    sitemap
+    back to top links
+    related documents
+You can have several <footer> elements in one document. -->
+    <footer>
+      <p>Author: Hege Refsnes</p>
+      <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+    </footer>
+    <!-- Defines an HTML form for user input.
+The <form> tag is used to create an HTML form for user input.
+The <form> element can contain one or more of the following form elements:
+    <input>
+    <textarea>
+    <button>
+    <select>
+    <option>
+    <optgroup>
+    <fieldset>
+    <label>
+    <output>
+ -->
+    <form action="/action_page.php" method="get">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <!-- Defines HTML headings.
+The <h1> to <h6> tags are used to define HTML headings.
+<h1> defines the most important heading. <h6> defines the least important heading.
+Note: Only use one <h1> per page - this should represent the main heading/subject for the whole page. Also, do not skip heading levels - start with <h1>, then use <h2>, and so on. -->
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
+    <!-- Defines a header for a document or section.
+The <header> element represents a container for introductory content or a set of navigational links.
+A <header> element typically contains:
+    one or more heading elements (<h1> - <h6>)
+    logo or icon
+    authorship information
+Note: You can have several <header> elements in one HTML document. However, <header> cannot be placed within a <footer>, <address> or another <header> element. -->
+    <article>
+      <header>
+        <h1>A heading here</h1>
+        <p>Posted by John Doe</p>
+        <p>Some additional information here</p>
+      </header>
+      <p>Lorem Ipsum dolor set amet....</p>
+    </article>
+    <!-- Defines a thematic change in the content.
+The <hr> tag defines a thematic break in an HTML page (e.g. a shift of topic).
+The <hr> element is most often displayed as a horizontal rule that is used to separate content (or define a change) in an HTML page. -->
+    <h1>The Main Languages of the Web</h1>
+    <p>
+      HTML is the standard markup language for creating Web pages. HTML
+      describes the structure of a Web page, and consists of a series of
+      elements. HTML elements tell the browser how to display the content.
+    </p>
+    <hr />
+    <p>
+      CSS is a language that describes how HTML elements are to be displayed on
+      screen, paper, or in other media. CSS saves a lot of work, because it can
+      control the layout of multiple web pages all at once.
+    </p>
+    <hr />
+    <!-- Defines a list item.
+The <li> tag defines a list item.
+The <li> tag is used inside ordered lists(<ol>), unordered lists (<ul>), and in menu lists (<menu>).
+In <ul> and <menu>, the list items will usually be displayed with bullet points.
+In <ol>, the list items will usually be displayed with numbers or letters.
+Tip: Use CSS to style lists. -->
+    <ol>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+    <!-- Specifies the main content of a document.
+The <main> tag specifies the main content of a document.
+The content inside the <main> element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms.
+Note: There must not be more than one <main> element in a document. The <main> element must NOT be a descendant of an <article>, <aside>, <footer>, <header>, or <nav> element. -->
+    <main>
+      <h1>Most Popular Browsers</h1>
+      <p>Chrome, Firefox, and Edge are the most used browsers today.</p>
+
+      <article>
+        <h2>Google Chrome</h2>
+        <p>
+          Google Chrome is a web browser developed by Google, released in 2008.
+          Chrome is the world's most popular web browser today!
+        </p>
+      </article>
+
+      <article>
+        <h2>Mozilla Firefox</h2>
+        <p>
+          Mozilla Firefox is an open-source web browser developed by Mozilla.
+          Firefox has been the second most popular web browser since January,
+          2018.
+        </p>
+      </article>
+
+      <article>
+        <h2>Microsoft Edge</h2>
+        <p>
+          Microsoft Edge is a web browser developed by Microsoft, released in
+          2015. Microsoft Edge replaced Internet Explorer.
+        </p>
+      </article>
+    </main>
+    <!-- Defines navigation links.
+The <nav> tag defines a set of navigation links.
+Notice that NOT all links of a document should be inside a <nav> element. The <nav> element is intended only for major blocks of navigation links.
+Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content.
+ -->
+    <nav>
+      <a href="/html/">HTML</a> | <a href="/css/">CSS</a> |
+      <a href="/js/">JavaScript</a> |
+      <a href="/python/">Python</a>
+    </nav>
+    <!-- Defines an alternate content for users that do not support client-side scripts.
+The <noscript> tag defines an alternate content to be displayed to users that have disabled scripts in their browser or have a browser that doesn't support script.
+The <noscript> element can be used in both <head> and <body>. When used inside <head>, the <noscript> element could only contain <link>, <style>, and <meta> elements. -->
+    <script>
+      document.write("Hello World!");
+    </script>
+    <noscript>Your browser does not support JavaScript!</noscript>
+    <!-- Defines an ordered list.
+The <ol> tag defines an ordered list. An ordered list can be numerical or alphabetical.
+The <li> tag is used to define each list item.
+Tip: Use CSS to style lists.
+Tip: For unordered list, use the <ul> tag. -->
+    <ol>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+
+    <ol start="50">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+    <!-- Defines a paragraph.
+The <p> tag defines a paragraph.
+Browsers automatically add a single blank line before and after each <p> element.
+Tip: Use CSS to style paragraphs. -->
+    <p>This is some text in a paragraph.</p>
+    <!-- Defines preformatted text.
+The <pre> tag defines preformatted text.
+Text in a <pre> element is displayed in a fixed-width font, and the text preserves both spaces and line breaks. The text will be displayed exactly as written in the HTML source code. -->
+    <pre>
+        Text in a pre element
+        is displayed in a fixed-width
+        font, and it preserves
+        both      spaces and
+        line breaks
+    </pre>
+    <!-- Defines a section in a document.
+The <section> tag defines a section in a document. -->
+    <section>
+      <h2>WWF History</h2>
+      <p>
+        The World Wide Fund for Nature (WWF) is an international organization
+        working on issues regarding the conservation, research and restoration
+        of the environment, formerly named the World Wildlife Fund. WWF was
+        founded in 1961.
+      </p>
+    </section>
+    <!-- Defines a table.
+The <table> tag defines an HTML table.
+An HTML table consists of one <table> element and one or more <tr>, <th>, and <td> elements.
+The <tr> element defines a table row, the <th> element defines a table header, and the <td> element defines a table cell.
+An HTML table may also include <caption>, <colgroup>, <thead>, <tfoot>, and <tbody> elements. -->
+    <table>
+      <tr>
+        <th>Month</th>
+        <th>Savings</th>
+      </tr>
+      <tr>
+        <td>January</td>
+        <td>$100</td>
+      </tr>
+    </table>
+    <!-- Groups the footer content in a table.
+The <tfoot> tag is used to group footer content in an HTML table.
+
+The <tfoot> element is used in conjunction with the <thead> and <tbody> elements to specify each part of a table (footer, header, body).
+
+Browsers can use these elements to enable scrolling of the table body independently of the header and footer. Also, when printing a large table that spans multiple pages, these elements can enable the table header and footer to be printed at the top and bottom of each page.
+
+Note: The <tfoot> element must have one or more <tr> tags inside.
+
+The <tfoot> tag must be used in the following context: As a child of a <table> element, after any <caption>, <colgroup>, <thead>, and <tbody> elements.
+
+Tip: The <thead>, <tbody>, and <tfoot> elements will not affect the layout of the table by default. However, you can use CSS to style these elements (see example below)!
+ -->
+    <table>
+      <thead>
+        <tr>
+          <th>Month</th>
+          <th>Savings</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>January</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>February</td>
+          <td>$80</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Sum</td>
+          <td>$180</td>
+        </tr>
+      </tfoot>
+    </table>
+    <!-- Defines an unordered list.
+The <ul> tag defines an unordered (bulleted) list.
+
+Use the <ul> tag together with the <li> tag to create unordered lists.
+
+Tip: Use CSS to style lists.
+
+Tip: For ordered lists, use the <ol> tag. -->
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+    <!-- Defines embedded video content.
+The <video> tag is used to embed video content in a document, such as a movie clip or other video streams.
+
+The <video> tag contains one or more <source> tags with different video sources. The browser will choose the first source it supports.
+
+The text between the <video> and </video> tags will only be displayed in browsers that do not support the <video> element.
+
+There are three supported video formats in HTML: MP4, WebM, and OGG. -->
+    <video width="320" height="240" controls>
+      <source src="movie.mp4" type="video/mp4" />
+      <source src="movie.ogg" type="video/ogg" />
+      Your browser does not support the video tag.
+    </video>
+    <!-- The <colgroup> tag specifies a group of one or more columns in a table for formatting.
+
+The <colgroup> tag is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row.
+
+Note: The <colgroup> tag must be a child of a <table> element, after any <caption> elements and before any <thead>, <tbody>, <tfoot>, and <tr> elements.
+
+Tip: To define different properties to a column within a <colgroup>, use the <col> tag within the <colgroup> tag. -->
+    <table>
+      <colgroup>
+        <col span="2" style="background-color: red" />
+        <col style="background-color: yellow" />
+      </colgroup>
+      <tr>
+        <th>ISBN</th>
+        <th>Title</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>3476896</td>
+        <td>My first HTML</td>
+        <td>$53</td>
+      </tr>
+    </table>
+    <!-- The <caption> tag defines a table caption.
+
+The <caption> tag must be inserted immediately after the <table> tag.
+
+Tip: By default, a table caption will be center-aligned above a table. However, the CSS properties text-align and caption-side can be used to align and place the caption. -->
+    <table>
+      <caption>
+        Monthly savings
+      </caption>
+      <tr>
+        <th>Month</th>
+        <th>Savings</th>
+      </tr>
+      <tr>
+        <td>January</td>
+        <td>$100</td>
+      </tr>
+    </table>
+  </body>
+</html>
