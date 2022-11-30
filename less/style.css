@@ -1,0 +1,46 @@
+#new-btn {
+  background-color: #20a220;
+}
+body {
+  background-color: #a77fa7;
+}
+h1 {
+  color: beige;
+}
+p {
+  padding: 10px;
+  margin: 50px;
+  text-align: center;
+  font-size: 20px;
+  color: red;
+}
+.fancier-border {
+  border: 10px dashed green;
+  background-color: yellow;
+  border-radius: 5px;
+}
+main {
+  background-color: #01100b;
+}
+main h2 {
+  color: aqua;
+}
+main article {
+  background-color: #1a4646;
+}
+main article p {
+  color: aqua;
+}
+span {
+  font-size: 20px;
+  background-color: wheat;
+  color: #1b5e20;
+}
+button {
+  font-size: 40px;
+  background-color: #e3ffe8;
+}
+#create {
+  font-size: 40px;
+  background-color: #808080;
+}

@@ -1,0 +1,114 @@
+// body {
+//     background-color: black;
+// }
+
+// import other less files...
+@import "button";
+
+@button-color: rgb(32, 162, 32); // overriden @button-color of button.less file, in this style.less file...
+
+// variables
+@var1: rgb(167, 127, 167);
+@var2: beige;
+@p-margin: 50px;
+
+body {
+    background-color: @var1;
+}
+h1 {
+    color: @var2;
+}
+p {
+    // color: @var2;
+    padding: 10px;
+    margin: @p-margin;
+    text-align: center;
+    .p-style(20px);
+}
+
+// .fancy-border {
+//     border: 1px dashed palevioletred;
+// }
+
+// .fancy-border() {
+//     border: 1px dashed palevioletred;
+// }
+
+// conditionals and mixin guards
+.fancy-border(@size: 1px, @color: palevioletred) {
+    border: @size dashed @color;
+}
+
+// .p-style(@size) {
+//     font-size: @size;
+//     color: red;
+// }
+
+.p-style(@size) when (@size <= 20) {
+    font-size: @size;
+    color: red;
+}
+
+.p-style(@size) when (@size > 20) {
+    font-size: @size;
+    color: blue;
+}
+
+.fancier-border {
+    // .fancy-border;
+    // .fancy-border();
+    .fancy-border(10px, green);
+    background-color: yellow;
+    border-radius: 5px;
+}
+
+// main {
+//     background-color: aquamarine;
+// }
+
+// main h2 {
+//     color: wheat;
+// }
+
+// main article p {
+//     color: aqua;
+// }
+
+// nesting and scope
+main {
+    background-color: rgb(1, 16, 11);
+    h2 {
+        color: aqua;
+    }
+    article {
+        background-color: rgb(26, 70, 70);
+        p {
+            color: aqua;
+        }
+    }
+}
+
+@base-size: 20px;
+@base-color: #1b5e20;
+
+span {
+    font-size: @base-size;
+    background-color: wheat;
+    color: @base-color;
+}
+
+// operators
+button {
+    font-size: @base-size * 2;
+    // font-size: @base-size + 2;
+    // font-size: @base-size - 2;
+    // font-size: @base-size / 2;
+    background-color: @base-color + 200;
+}
+
+#create {
+    font-size: 40px;
+    // functions
+    background-color: desaturate(red, 100%);
+    // background-color: desaturate(@color, 100%); we can also pass variables...
+}
