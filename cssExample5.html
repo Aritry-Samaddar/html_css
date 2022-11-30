@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+          "navbar navbar navbar navbar"
+          "section section section aside"
+          "footer footer footer footer";
+      }
+      @media only screen and (max-width: 300px) {
+        body {
+          background-color: red;
+        }
+        .container {
+          grid-template-areas:
+            "navbar navbar navbar navbar"
+            "section section section section"
+            "aside aside aside aside"
+            "footer footer footer footer";
+        }
+        aside {
+          display: none;
+        }
+        span {
+            display: block;
+            text-align: center;
+        }
+      }
+      @media only screen and (min-width: 300px) and (max-width: 500px) {
+        body {
+          background-color: blue;
+        }
+        .container {
+          grid-template-areas:
+            "navbar navbar navbar navbar"
+            "section section section section"
+            "aside aside aside aside"
+            "footer footer footer footer";
+        }
+        aside {
+          display: none;
+        }
+      }
+      @media (min-width: 500px) and (max-width: 800px) {
+        body {
+          background-color: yellow;
+        }
+        .container {
+          grid-template-areas:
+            "navbar navbar navbar navbar"
+            "section section section section"
+            "aside aside aside aside"
+            "footer footer footer footer";
+        }
+      }
+      @media (min-width: 800px) {
+        body {
+          background-color: green;
+        }
+      }
+      .bdr {
+        border: 2px solid black;
+        padding: 10px 23px;
+        background-color: wheat;
+      }
+      nav {
+        grid-area: navbar;
+      }
+      section {
+        grid-area: section;
+      }
+      aside {
+        grid-area: aside;
+      }
+      footer {
+        grid-area: footer;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="bdr">
+        <span>Home</span>
+        <span>About</span>
+        <span>Services</span>
+        <span>Contact</span>
+        <!-- Home About Contact -->
+      </nav>
+      <section class="bdr">
+        <h2>Learn CSS</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium laboriosam officia veniam eum omnis dicta, aliquam eaque nobis deleniti vero, accusamus ea, libero maxime quos dignissimos provident dolorum error. Quidem iure, cumque blanditiis sequi laboriosam aliquam voluptates ad quasi ratione quas et possimus quae hic enim, quod eos sapiente? Nemo cum, cupiditate ullam eos nihil ut, officiis quis facilis, eum odio non doloremque voluptatibus placeat voluptate natus laboriosam magni rem velit aut quisquam vero officia distinctio voluptates? Recusandae, laboriosam! Excepturi, voluptatum maxime dolores amet necessitatibus placeat molestiae at alias quo modi numquam aspernatur sed praesentium odio quia exercitationem maiores quas, libero omnis. Est consequatur dolorum ad sit! Incidunt, at corrupti. Dolor quisquam sint rem, incidunt tempore consequuntur molestiae ipsa inventore deleniti earum.</p>
+      </section>
+      <aside class="bdr">
+        <h2>More about us</h2>
+      </aside>
+    </div>
+    <footer class="bdr">Copyright Aritry 2022</footer>
+  </body>
+</html>

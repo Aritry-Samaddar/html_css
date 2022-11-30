@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        /* grid-template-columns: 300px 100px 100px; */
+        /* grid-template-columns: 300px 100px auto; */
+        /* grid-template-columns: 1fr 4fr 1fr; */
+        /* grid-template-columns: repeat(3, auto); */
+        /* grid-gap: 2rem; */
+
+        /* grid-template-rows: 1fr 1fr 4fr;
+            grid-auto-rows: 2fr;
+            grid-template-columns: 1fr 4fr 2fr;
+            grid-gap: 1rem; */
+
+        /* grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(4, 1fr); */
+        /* grid-column-gap: 7rem;
+            grid-row-gap: 1rem; */
+        grid-gap: 1rem;
+        /* grid-template-columns: 112px 112px 112px; */
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        /* justify-content: center; */
+        /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+
+        grid-template-areas:
+          "navbar navbar navbar navbar"
+          "section section section aside"
+          "footer footer footer footer";
+      }
+      .item {
+        /* height: 100px;
+            width: 100px; */
+        background-color: rgb(181, 157, 181);
+        border: 3px solid black;
+        border-color: rgb(189, 51, 189);
+        /* margin: 3px; */
+        padding: 15px 5px;
+      }
+      .item:first-child {
+        /* grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3; */
+
+        /* grid-column: 1 / span 3;
+            grid-row: 1 / span 3; */
+      }
+      #navbar {
+        grid-area: navbar;
+      }
+      #section {
+        grid-area: section;
+      }
+      #aside {
+        grid-area: aside;
+      }
+      footer {
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item" id="navbar">About Home Contact</div>
+      <div class="item" id="section">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+        expedita veritatis voluptas soluta, tempora molestiae pariatur nisi
+        debitis, temporibus odio maxime obcaecati hic. Nam laboriosam unde
+        impedit voluptatum ut odio voluptates veniam? Repellendus, itaque.
+      </div>
+      <div class="item" id="aside">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem modi
+        voluptas temporibus reprehenderit, mollitia pariatur consequatur quis
+        non vitae molestias minus. Voluptatum eos impedit minima incidunt
+        delectus amet nam, molestias fugit consequatur a. Repudiandae!
+      </div>
+    </div>
+    <footer class="item">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. At laudantium
+      neque incidunt.
+    </footer>
+    <!-- <div class="container">
+        <div class="item">This is Item-1</div>
+        <div class="item">This is Item-2</div>
+        <div class="item">This is Item-3</div>
+        <div class="item">This is Item-4</div>
+        <div class="item">This is Item-5</div>
+        <div class="item">This is Item-6</div>
+        <div class="item">This is Item-7</div>
+        <div class="item">This is Item-8</div>
+        <div class="item">This is Item-9</div>
+    </div> -->
+  </body>
+</html>
