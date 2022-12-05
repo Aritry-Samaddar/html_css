@@ -1,0 +1,33 @@
+// Todo List Body
+.todo-body ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  li {
+    // padding: $m-space;
+    // padding: addition(8px, 12px);
+    padding: addition($m-space, 8px);
+    display: flex;
+    align-items: center; // center flex-start flex-end
+    justify-content: space-between;
+    border-bottom: 1px solid #c7c7c7;
+
+    &:hover {
+      background-color: darken($color: #ffffff, $amount: 5%);
+    }
+
+    // button {
+    //   background-color: #ffffff;
+    //   border: 1px solid $warning-red;
+    //   color: $warning-red;
+
+    //   &:hover,
+    //   &:focus {
+    //     background-color: $warning-red;
+    //     color: #ffffff;
+    //     border-color: #ffffff;
+    //   }
+    // }
+  }
+}

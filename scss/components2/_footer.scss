@@ -1,0 +1,45 @@
+// Footer Styles
+
+footer {
+  font-family: $oswald;
+  border-top: 1px solid $border-grey;
+}
+
+.footer-widgets {
+  padding: $l-size 0;
+  margin: 0 auto;
+  display: flex;
+  max-width: $container;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  .footer-logo {
+    max-width: 240px;
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-info {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.copyright {
+  border-top: 1px solid $border-grey;
+  text-align: center;
+  color: $bakery-brown;
+  padding: 15px;
+
+  .btn-primary {
+    @include button(#4c4c4c, #ffffff);
+  }
+
+  .btn-danger {
+    @include button(#dc3545, #ffffff);
+  }
+
+  .btn-secondary {
+    @include button(#007bff, #ffffff);
+  }
+}

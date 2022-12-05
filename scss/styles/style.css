@@ -1,14 +1,37 @@
 body {
   background-color: #4c4c4c;
-  font-family: sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 5%;
   margin: 0;
 }
 
-button {
+.btn, .btn-primary, .btn-warning {
   min-width: 100px;
   padding: 10px;
   font-size: 12px;
+  background-color: #ffffff;
+  border: 1px solid #333333;
+  border-radius: 5px;
+}
+
+.btn-warning {
+  border-color: #dc3545;
+  color: #dc3545;
+}
+.btn-warning:hover, .btn-warning:focus {
+  background-color: #dc3545;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.btn-primary {
+  border-color: #4da3ff;
+  color: #4da3ff;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #4da3ff;
+  border: #ffffff;
+  color: #ffffff;
 }
 
 .todo-list {
@@ -16,18 +39,21 @@ button {
   max-width: 600px;
   width: 100%;
   margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .todo-header {
-  background-color: #128fc2;
+  background-color: #4da3ff;
   color: #ffffff;
   text-align: center;
-  padding: 15px;
+  padding: 12px;
 }
 .todo-header h1 {
   margin: 0;
   padding: 0;
   font-weight: normal;
+  font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
 }
 
 .todo-body ul {
@@ -36,38 +62,36 @@ button {
   list-style-type: none;
 }
 .todo-body ul li {
-  padding: 15px;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #c7c7c7;
 }
-.todo-body ul li button {
-  background-color: #ffffff;
-  border: 1px solid #dc3545;
-  color: #dc3545;
-}
-.todo-body ul li button:hover, .todo-body ul li button:focus {
-  background-color: #dc3545;
-  color: #ffffff;
-  border-color: #ffffff;
+.todo-body ul li:hover {
+  background-color: #f2f2f2;
 }
 
 .todo-footer {
-  padding: 15px;
+  padding: 12px;
   display: flex;
 }
 .todo-footer input {
   flex-grow: 1;
-  margin-right: 15px;
-  padding-left: 15px;
+  margin-right: 12px;
+  padding-left: 12px;
 }
-.todo-footer button {
-  background-color: #ffffff;
-  border: 1px solid #007bff;
-  color: #007bff;
+
+.todo-footer {
+  padding: 24px;
 }
-.todo-footer button:hover, .todo-footer button:focus {
-  background-color: #007bff;
-  border: #ffffff;
-  color: #ffffff;
+.todo-footer:hover {
+  background-color: #f2f2f2;
+}
+.todo-footer .btn-primary {
+  color: red;
+}
+
+body {
+  background-color: #ccc;
 }/*# sourceMappingURL=style.css.map */

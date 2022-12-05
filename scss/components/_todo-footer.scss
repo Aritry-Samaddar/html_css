@@ -1,0 +1,30 @@
+// $light-blue: plum;
+
+// Todo List Footer
+.todo-footer {
+  // Pseudo Selectors
+
+  // Selector Styles
+  padding: $m-space;
+  display: flex;
+
+  // Nesting
+  input {
+    flex-grow: 1;
+    margin-right: $m-space;
+    padding-left: $m-space;
+  }
+
+  // button {
+  //   background-color: #ffffff;
+  //   border: 1px solid $light-blue;
+  //   color: $light-blue;
+
+  //   &:hover,
+  //   &:focus {
+  //     background-color: $light-blue;
+  //     border: #ffffff;
+  //     color: #ffffff;
+  //   }
+  // }
+}

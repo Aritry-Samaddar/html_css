@@ -1,0 +1,36 @@
+// Colors
+
+// $light-blue: #007bff;
+$brand-blue: #007bff;
+$light-blue: lighten($brand-blue, 15%);
+$dark-blue: darken($brand-blue, 15%);
+$warning-red: #dc3545;
+// $sunset-red: lighten($warning-red, 15%);
+
+// Spacing
+
+$s-space: 10px;
+$m-space: 12px;
+// $l-space: 16px;
+$l-space: $s-space + $m-space;
+
+// Fonts
+
+$helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$rockwell: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman",
+  serif;
+
+// Mixins
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// Functions
+
+@function addition($main-value, $second-value) {
+  @return $main-value + $second-value;
+}

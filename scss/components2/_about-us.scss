@@ -1,0 +1,25 @@
+// About Us Section
+
+// $bakery-brown: #885345;
+.about-us {
+  background: url("../images/bakery-about-background.jpg") no-repeat center top;
+  border-top: 4px solid $bakery-brown;
+  border-bottom: 4px solid $bakery-brown;
+  color: #fff;
+  font-size: 21px;
+  line-height: 1.6;
+  //   opacity: 0.8;
+}
+
+.about-us-text {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: $l-size 0;
+
+  p {
+    max-width: $container;
+    margin: 0 auto;
+    padding: $l-size 0;
+    text-align: justify;
+    font-weight: normal;
+  }
+}

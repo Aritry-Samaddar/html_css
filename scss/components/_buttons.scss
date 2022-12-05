@@ -1,0 +1,34 @@
+.btn {
+  min-width: 100px;
+  padding: 10px;
+  font-size: 12px;
+  background-color: #ffffff;
+  border: 1px solid #333333;
+  @include border-radius(5px);
+}
+
+.btn-warning {
+  @extend .btn;
+  border-color: $warning-red;
+  color: $warning-red;
+
+  &:hover,
+  &:focus {
+    background-color: $warning-red;
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+}
+
+.btn-primary {
+  @extend .btn;
+  border-color: $light-blue;
+  color: $light-blue;
+
+  &:hover,
+  &:focus {
+    background-color: $light-blue;
+    border: #ffffff;
+    color: #ffffff;
+  }
+}
